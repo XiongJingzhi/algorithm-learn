@@ -1,0 +1,29 @@
+{
+  "name": "algorithm-learn",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/XiongJingzhi/algorithm-learn.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/XiongJingzhi/algorithm-learn/issues"
+  },
+  "homepage": "https://github.com/XiongJingzhi/algorithm-learn#readme",
+  "dependencies": {
+    "typescript": "^4.6.4"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.17.12",
+    "@babel/preset-typescript": "^7.16.7",
+    "@types/jest": "^27.5.1",
+    "jest": "^28.1.0",
+    "ts-jest": "^28.0.2"
+  }
+}
