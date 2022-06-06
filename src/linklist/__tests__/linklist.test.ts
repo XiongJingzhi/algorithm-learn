@@ -1,4 +1,4 @@
-import { ListNode, traverse, createList, removeNthFromEnd } from "../linklist";
+import { ListNode, traverse, createList, removeNthFromEnd, removeNthFromEnd1, mergeTwoLists } from "../linklist";
 const myMock1 = jest.fn();
 
 describe('linklist ListNode', () => {
@@ -25,5 +25,22 @@ describe('linklist ListNode', () => {
         createList(linklist, arr)
         const l2 = removeNthFromEnd(linklist, 2)
         expect(l2.toString()).toEqual([1,2,3,5])
+    })
+
+    it('removeNthFromEnd1', () => {
+        const l1 = removeNthFromEnd1(linklist, 1)
+        expect(l1).toEqual(null)
+        const arr = [2, 3, 4, 5].map(item => new ListNode(item))
+        createList(linklist, arr)
+        const l2 = removeNthFromEnd1(linklist, 2)
+        expect(l2.toString()).toEqual([1,2,3,5])
+    })
+
+    it('mergeTwoLists', () => {
+        const arr1 = [2,4].map(item => new ListNode(item))
+        const arr2 = [3,4].map(item => new ListNode(item))
+        const l1 = createList(new ListNode(1), arr1);
+        const l2 = createList(new ListNode(1), arr2);
+        expect(mergeTwoLists(l1, l2).toString()).toEqual([1,1,2,3,4,4])
     })
 })
